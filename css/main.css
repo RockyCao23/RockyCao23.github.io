@@ -3,6 +3,8 @@
   --linkColor: #95e56a;
   --mainTextColor:#e1e1e1;
   --secondaryTextColor:#828282;
+  --mainFontSize: 1em;
+  --secondaryFontSize: 0.75em;
 }
 
 body {
@@ -22,19 +24,19 @@ body {
 
 .topbar .introduction {
   height: 11em;
-  padding-left: 2em;
+  padding-left: 1em;
   word-wrap: break-word;
-  width: 50em;
-  font-size: 2em;
+  width: 25em;
+  font-size: var(--mainFontSize);
 }
 
 .topbar .menu {
   text-align: right;
   list-style: none;
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
   float: right;
   margin-left: auto;
-  padding-right: 5em;
+  padding-right: 2em;
 }
 
 .menuLink {
@@ -53,17 +55,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 #shoeMsg {
-  padding-right: 2em;
-  font-size: 1.5em;
+  padding-right: 1em;
+  font-size: var(--secondaryFontSize);
   float: right;
 }
 
 #featured {
+  padding-left: 00.75em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +74,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: var(--secondaryTextColor);
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
 }
 
 .textImg {
@@ -81,23 +84,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .summary {
   float: left;
   max-width: 100%;
   text-align: left;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
   color: #e1e1e1;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .image {
   float: right;
   width: auto;
   margin-left: auto;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .scaleImage {
@@ -111,9 +114,9 @@ body {
 }
 
 #viewMore {
-  padding: 2em;
+  padding: 1em;
   float: right;
   margin-left: auto;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
 }
 /*# sourceMappingURL=main.css.map */

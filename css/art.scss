@@ -6,6 +6,8 @@
 :root{
  --linkColor: #95e56a;
  --secondaryTextColor:#828282;
+ --mainFontSize: 1em;
+ --secondaryFontSize: 0.75em;
 }
 
 //Body Css
@@ -22,17 +24,17 @@ font-family: 'roboto mono';
 
  #title{
    height: 11em;
-  font-size: 2em;
-  padding-left: 2em;
+  font-size: var(--mainFontSize);
+  padding-left: 1em;
  }
 
  .menu{
   text-align: right;
   list-style: none;
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
   float: right;
   margin-left: auto;
-  padding-right: 5em;
+  padding-right: 2em;
 
 }
 
@@ -47,8 +49,8 @@ font-family: 'roboto mono';
 
 .photos{
 
-  font-size: 1.5em;
-  padding-left: 2.5em;
+  font-size: var(--secondaryFontSize);
+  padding-left: 1.25em;
   align-items: center;
   color: var(--secondaryTextColor);
   display: flex;
@@ -57,14 +59,14 @@ font-family: 'roboto mono';
 
 .subtitle{
 
-  width: 5em;
-  padding-right: 1em;
+  width: 5.5em;
+  padding-right: 0.5em;
 
 }
 
 .img1{
 
-  padding: 0.5em;
+  padding: 0.25em;
   width: 100%;
   height: auto;
   min-width: 20vw;

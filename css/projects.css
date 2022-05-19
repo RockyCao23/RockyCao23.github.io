@@ -2,6 +2,8 @@
 :root {
   --linkColor: #95e56a;
   --mainTextColor:#e1e1e1;
+  --mainFontSize: 1em;
+  --secondaryFontSize: 0.75em;
 }
 
 body {
@@ -21,19 +23,19 @@ body {
 
 .topbar .introduction {
   height: 11em;
-  padding-left: 2em;
+  padding-left: 1em;
   word-wrap: break-word;
   width: 30em;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
 }
 
 .topbar .menu {
   text-align: right;
   list-style: none;
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
   float: right;
   margin-left: auto;
-  padding-right: 5em;
+  padding-right: 2em;
 }
 
 .menuLink {
@@ -57,9 +59,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding: 0.5em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .textImgB {
@@ -69,9 +71,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding: 0.5em;
+  padding-top: 5em;
+  padding-bottom: 5em;
   background-color: #3f3d3d;
 }
 
@@ -79,16 +81,16 @@ body {
   float: left;
   max-width: 100%;
   text-align: left;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
   color: #e1e1e1;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .image {
   float: right;
   width: auto;
   margin-left: auto;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .img2 {
@@ -97,7 +99,7 @@ body {
   display: flex;
   float: right;
   margin-left: auto;
-  padding: 3em;
+  padding: 1.5em;
 }
 
 .scaleImage {

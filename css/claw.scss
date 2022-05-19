@@ -5,6 +5,9 @@
 //Variables
 :root{
  --linkColor: #95e56a;
+ --mainFontSize: 1em;
+ --secondaryFontSize: 0.75em;
+
 }
 
 //Body Css
@@ -21,17 +24,17 @@ font-family: 'roboto mono';
 
  #title{
    height: 11em;
-  font-size: 2em;
-  padding-left: 2em;
+  font-size: var(--mainFontSize);
+  padding-left: 1em;
  }
 
  .menu{
   text-align: right;
   list-style: none;
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
   float: right;
   margin-left: auto;
-  padding-right: 5em;
+  padding-right: 2em;
 
 }
 
@@ -57,36 +60,44 @@ font-family: 'roboto mono';
   justify-content: center;
   align-items: center;
 
-  .text{
-    float:left;
-    font-size: 2em;
-    max-width: 100%;
-    padding: 1em;
-
-  }
-
-  //Types of img
-  .img1{
-    float: right;
-    margin-left: auto;
-    padding: 3em;
-  }
-  .img2{
-    display: flex;
-    float: right;
-    margin-left: auto;
-    padding: 3em;
-  }
+}
+.text{
+  float:left;
+  font-size: var(--mainFontSize);
+  max-width: 100%;
+  padding: 1em;
 
 }
 
+//Types of img
+.img1{
+  display: flex;
+  float: right;
+  margin-left: auto;
+  padding: 1em;
+}
+.img2{
+  display: flex;
+  float: right;
+  margin-left: auto;
+  padding: 1em;
+}
+
+
 //Types of mig scaling with window
+.gifScale{
+  
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
+
+}
 .scaleImg1{
 
   width: 100%;
   height: auto;
   min-width: 30vw;
-  padding-left: 1em;
+  padding: 0.5em;
 
 }
 .scaleImg2{
@@ -102,8 +113,8 @@ font-family: 'roboto mono';
 }
 
 #viewMore{
-  padding: 2em;
+  padding: 1em;
   float: right;
   margin-left: auto;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
 }

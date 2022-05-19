@@ -5,6 +5,8 @@
 //Variables
 :root{
  --linkColor: #95e56a;
+ --mainFontSize: 1em;
+ --secondaryFontSize: 0.75em;
 }
 
 //Main Body Css
@@ -22,17 +24,17 @@ font-family: 'roboto mono';
 
 #title{
   height: 11em;
- font-size: 2em;
- padding-left: 2em;
+ font-size: var(--mainFontSize);
+ padding-left: 1em;
 }
 
  .menu{
   text-align: right;
   list-style: none;
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
   float: right;
   margin-left: auto;
-  padding-right: 5em;
+  padding-right: 2em;
 
 }
 
@@ -59,7 +61,7 @@ font-family: 'roboto mono';
 
  .text{
    float:left;
-   font-size: 2em;
+   font-size: var(--mainFontSize);
    max-width: 100%;
    padding: 1em;
 
@@ -69,14 +71,22 @@ font-family: 'roboto mono';
  .img1{
    float: right;
    margin-left: auto;
-   padding: 3em;
+   padding: 1em;
  }
  .img2{
    display: flex;
    float: right;
    margin-left: auto;
-   padding: 3em;
+   padding: 1em;
  }
+
+}
+
+.gifScale{
+  
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
 
 }
 
@@ -85,7 +95,7 @@ font-family: 'roboto mono';
   width: 100%;
   height: auto;
   min-width: 30vw;
-  padding-left: 1em;
+  padding: 0.5em;
 
 }
 .scaleImg2{
@@ -102,8 +112,8 @@ font-family: 'roboto mono';
 }
 
 #viewMore{
-  padding: 2em;
+  padding: 1em;
   float: right;
   margin-left: auto;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
 }

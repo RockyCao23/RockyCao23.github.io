@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
 :root {
   --linkColor: #95e56a;
+  --mainFontSize: 1em;
+  --secondaryFontSize: 0.75em;
 }
 
 body {
@@ -20,17 +22,17 @@ body {
 
 .topbar #title {
   height: 11em;
-  font-size: 2em;
-  padding-left: 2em;
+  font-size: var(--mainFontSize);
+  padding-left: 1em;
 }
 
 .topbar .menu {
   text-align: right;
   list-style: none;
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
   float: right;
   margin-left: auto;
-  padding-right: 5em;
+  padding-right: 2em;
 }
 
 .menuLink {
@@ -62,7 +64,7 @@ body {
 
 .imgText .text {
   float: left;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
   max-width: 100%;
   padding: 1em;
 }
@@ -70,7 +72,7 @@ body {
 .imgText .img1 {
   float: right;
   margin-left: auto;
-  padding: 3em;
+  padding: 1em;
 }
 
 .imgText .img2 {
@@ -79,14 +81,20 @@ body {
   display: flex;
   float: right;
   margin-left: auto;
-  padding: 3em;
+  padding: 1em;
+}
+
+.gifScale {
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
 }
 
 .scaleImg1 {
   width: 100%;
   height: auto;
   min-width: 30vw;
-  padding-left: 1em;
+  padding: 0.5em;
 }
 
 .scaleImg2 {
@@ -100,9 +108,9 @@ body {
 }
 
 #viewMore {
-  padding: 2em;
+  padding: 1em;
   float: right;
   margin-left: auto;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
 }
 /*# sourceMappingURL=car.css.map */

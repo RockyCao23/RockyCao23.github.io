@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
 :root {
   --linkColor: #95e56a;
+  --mainFontSize: 1em;
+  --secondaryFontSize: 0.75em;
 }
 
 body {
@@ -20,17 +22,17 @@ body {
 
 .topbar #title {
   height: 11em;
-  font-size: 2em;
-  padding-left: 2em;
+  font-size: var(--mainFontSize);
+  padding-left: 1em;
 }
 
 .topbar .menu {
   text-align: right;
   list-style: none;
-  font-size: 1.5em;
+  font-size: var(--secondaryFontSize);
   float: right;
   margin-left: auto;
-  padding-right: 5em;
+  padding-right: 2em;
 }
 
 .menuLink {
@@ -44,6 +46,6 @@ body {
 
 .lol {
   text-align: center;
-  font-size: 2em;
+  font-size: var(--mainFontSize);
 }
 /*# sourceMappingURL=about.css.map */
