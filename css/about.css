@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+:root {
+  --linkColor: #95e56a;
+}
+
+body {
+  background-color: #242323;
+  color: #e1e1e1;
+  font-family: 'roboto mono';
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar #title {
+  height: 11em;
+  font-size: 2em;
+  padding-left: 2em;
+}
+
+.topbar .menu {
+  text-align: right;
+  list-style: none;
+  font-size: 1.5em;
+  float: right;
+  margin-left: auto;
+  padding-right: 5em;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+
+.menuLink:hover {
+  font-weight: 200;
+}
+
+.lol {
+  text-align: center;
+  font-size: 2em;
+}
+/*# sourceMappingURL=about.css.map */

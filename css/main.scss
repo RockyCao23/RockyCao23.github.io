@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+
+// variables
+:root{
+  --linkColor: #95e56a;
+  --mainTextColor:#e1e1e1;
+  --secondaryTextColor:#828282;
+}
+
+
+// main body
+body{
+ background-color: #242323;
+ color: var(--mainTextColor);
+font-family: 'roboto mono';
+}
+
+
+.topbar{
+
+  display: flex;
+  align-items: center;
+
+  .introduction {
+    height: 11em;
+    padding-left: 2em;
+    word-wrap: break-word;
+    width: 50em;
+    font-size: 2em;
+  }
+
+  .menu{
+    text-align: right;
+    list-style: none;
+    font-size: 1.5em;
+    float: right;
+    margin-left: auto;
+    padding-right: 5em;
+
+  }
+
+}
+
+.menuLink{
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+.menuLink:hover{
+  font-weight: 200;
+}
+
+//Shoes
+
+#shoes{
+  display: flex;
+  justify-content: center;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+#shoeMsg{
+  padding-right: 2em;
+  font-size: 1.5em;
+  float: right;
+}
+
+
+#featured{
+
+  display: flex;
+  align-items: center;
+  color: var(--secondaryTextColor);
+  font-size: 1.5em;
+  
+}
+
+// featured
+
+
+.textImg{
+
+  display: flex;
+  align-items: center;
+  margin: 1em;
+
+}
+
+.summary{
+  float: left;
+  max-width: 100%;
+  text-align: left;
+
+
+  font-size: 2em;
+  color: rgb(225, 225, 225);
+  padding: 1em;
+  }
+
+.image{
+  float: right;
+  width: auto;
+  margin-left: auto;
+
+  padding: 1em;
+  }
+
+
+// Major Classes and Initializations
+
+.scaleImage{
+  width: 100%;
+  height: auto;
+  min-width: 40vw;
+}
+
+.link{
+  color: var(--linkColor);
+}
+
+
+ #viewMore{
+  padding: 2em;
+  float: right;
+  margin-left: auto;
+  font-size: 2em;
+}

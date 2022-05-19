@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+:root {
+  --linkColor: #95e56a;
+  --mainTextColor:#e1e1e1;
+}
+
+body {
+  background-color: #242323;
+  color: var(--mainTextColor);
+  font-family: 'roboto mono';
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .introduction {
+  height: 11em;
+  padding-left: 2em;
+  word-wrap: break-word;
+  width: 30em;
+  font-size: 2em;
+}
+
+.topbar .menu {
+  text-align: right;
+  list-style: none;
+  font-size: 1.5em;
+  float: right;
+  margin-left: auto;
+  padding-right: 5em;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+
+.menuLink:hover {
+  font-weight: 200;
+}
+
+/*
+#arduinoIMG{
+ //padding: 1em;
+}
+ */
+.textImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.textImgB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  background-color: #3f3d3d;
+}
+
+.summary {
+  float: left;
+  max-width: 100%;
+  text-align: left;
+  font-size: 2em;
+  color: #e1e1e1;
+  padding: 1em;
+}
+
+.image {
+  float: right;
+  width: auto;
+  margin-left: auto;
+  padding: 1em;
+}
+
+.img2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin-left: auto;
+  padding: 3em;
+}
+
+.scaleImage {
+  width: 100%;
+  height: auto;
+  min-width: 40vw;
+}
+
+.scaleImg2 {
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
+}
+
+.link {
+  color: var(--linkColor);
+}
+/*# sourceMappingURL=projects.css.map */

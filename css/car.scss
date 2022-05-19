@@ -1,0 +1,109 @@
+
+//Font Link Import
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+//Variables
+:root{
+ --linkColor: #95e56a;
+}
+
+//Main Body Css
+body{
+background-color: #242323;
+color: rgb(225, 225, 225);
+font-family: 'roboto mono';
+}
+
+
+.topbar{
+
+ display: flex;
+ align-items: center;
+
+#title{
+  height: 11em;
+ font-size: 2em;
+ padding-left: 2em;
+}
+
+ .menu{
+  text-align: right;
+  list-style: none;
+  font-size: 1.5em;
+  float: right;
+  margin-left: auto;
+  padding-right: 5em;
+
+}
+
+}
+.menuLink{
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+.menuLink:hover{
+  font-weight: 200;
+}
+
+.remarks{
+  display: flex;
+}
+
+
+
+.imgText{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ .text{
+   float:left;
+   font-size: 2em;
+   max-width: 100%;
+   padding: 1em;
+
+ }
+
+ //Types of img
+ .img1{
+   float: right;
+   margin-left: auto;
+   padding: 3em;
+ }
+ .img2{
+   display: flex;
+   float: right;
+   margin-left: auto;
+   padding: 3em;
+ }
+
+}
+
+.scaleImg1{
+
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
+  padding-left: 1em;
+
+}
+.scaleImg2{
+
+  width: 100%;
+  height: auto;
+  min-width: 45vw;
+
+}
+
+
+.link{
+  color: var(--linkColor);
+}
+
+#viewMore{
+  padding: 2em;
+  float: right;
+  margin-left: auto;
+  font-size: 2em;
+}

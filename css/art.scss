@@ -1,0 +1,78 @@
+//Font Link Import
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+//Variables
+:root{
+ --linkColor: #95e56a;
+ --secondaryTextColor:#828282;
+}
+
+//Body Css
+body{
+background-color: #242323;
+color: rgb(225, 225, 225);
+font-family: 'roboto mono';
+}
+
+.topbar{
+
+  display: flex;
+  align-items: center;
+
+ #title{
+   height: 11em;
+  font-size: 2em;
+  padding-left: 2em;
+ }
+
+ .menu{
+  text-align: right;
+  list-style: none;
+  font-size: 1.5em;
+  float: right;
+  margin-left: auto;
+  padding-right: 5em;
+
+}
+
+}
+.menuLink{
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+.menuLink:hover{
+  font-weight: 200;
+}
+
+.photos{
+
+  font-size: 1.5em;
+  padding-left: 2.5em;
+  align-items: center;
+  color: var(--secondaryTextColor);
+  display: flex;
+
+}
+
+.subtitle{
+
+  width: 5em;
+  padding-right: 1em;
+
+}
+
+.img1{
+
+  padding: 0.5em;
+  width: 100%;
+  height: auto;
+  min-width: 20vw;
+
+}
+
+.scaleImage{
+  width: 100%;
+  height: auto;
+  min-width: 0vw;
+}

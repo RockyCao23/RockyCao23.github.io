@@ -1,0 +1,53 @@
+
+//Font Link Import
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+//Variables
+:root{
+ --linkColor: #95e56a;
+}
+
+//Main Body Css
+body{
+background-color: #242323;
+color: rgb(225, 225, 225);
+font-family: 'roboto mono';
+}
+
+
+.topbar{
+
+ display: flex;
+ align-items: center;
+
+#title{
+  height: 11em;
+ font-size: 2em;
+ padding-left: 2em;
+}
+
+ .menu{
+  text-align: right;
+  list-style: none;
+  font-size: 1.5em;
+  float: right;
+  margin-left: auto;
+  padding-right: 5em;
+
+}
+
+}
+.menuLink{
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+.menuLink:hover{
+  font-weight: 200;
+}
+
+.lol{
+
+ text-align: center;
+ font-size: 2em;
+
+}
