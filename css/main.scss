@@ -8,6 +8,8 @@
   --secondaryTextColor:#828282;
   --mainFontSize: 1em;
   --secondaryFontSize: 0.75em;
+  --borderPadding: 1em;
+  --largeBreak: 5em
 }
 
 
@@ -20,29 +22,25 @@ font-family: 'roboto mono';
 
 
 .topbar{
-
   display: flex;
-  align-items: center;
-
-  .introduction {
-    height: 11em;
-    padding-left: 1em;
-    word-wrap: break-word;
-    width: 25em;
-    font-size: var(--mainFontSize);
-  }
-
-  .menu{
-    text-align: right;
-    list-style: none;
-    font-size: var(--secondaryFontSize);
-    float: right;
-    margin-left: auto;
-    padding-right: 2em;
-
-  }
-
 }
+
+.introduction {
+  word-wrap: break-word;
+  width: 25em;
+  font-size: var(--mainFontSize);
+}
+
+.menu{
+  text-align: right;
+  list-style: none;
+  font-size: var(--secondaryFontSize);
+  float: right;
+  margin-left: auto;
+  padding: 1em 0;
+}
+
+// Specifically for Menu
 
 .menuLink{
   text-decoration: none;
@@ -52,67 +50,73 @@ font-family: 'roboto mono';
   font-weight: 200;
 }
 
-//Shoes
-
-#shoes{
-  display: flex;
-  justify-content: center;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-#shoeMsg{
-  padding-right: 1em;
-  font-size: var(--secondaryFontSize);
-  float: right;
-}
 
 
-#featured{
-
-  padding-left: 00.75em;
-  display: flex;
-  align-items: center;
-  color: var(--secondaryTextColor);
-  font-size: var(--secondaryFontSize);
-  
-}
-
-// featured
-
-
+// Main Layout
 .textImg{
 
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  margin: 0.5em;
+  padding: var(--largeBreak) var(--borderPadding);
 
 }
 
 .summary{
-  float: left;
-  max-width: 100%;
-  text-align: left;
 
+  margin: 0 1em 1em 0;
+  text-align: left;
+  flex: 300px;
 
   font-size: var(--mainFontSize);
   color: rgb(225, 225, 225);
-  padding: 0.5em;
   }
 
-.image{
-  float: right;
-  width: auto;
+.img1{
+
+  text-align: right;
   margin-left: auto;
-  padding: 0.5em;
-  }
+  flex: 300px;
+ // max-width: 500px;
+}
+
+.img2{
+
+  text-align: center;
+  display: flex;
+  flex: 2 150px;
+  float: right;
+  margin-left: auto;
+}
 
 
-// Major Classes and Initializations
-
-.scaleImage{
+.scaleImg1{
   width: 100%;
   height: auto;
   min-width: 40vw;
+}
+
+.scaleImg2{
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
+
+}
+
+// Features
+
+.font2{
+  font-size: var(--secondaryFontSize);
+}
+.RFloat{
+  float: right;
+}
+
+.sectionTitle{
+
+  color: var(--secondaryTextColor);
+  font-size: var(--secondaryFontSize);
+  
 }
 
 .link{
@@ -120,9 +124,100 @@ font-family: 'roboto mono';
 }
 
 
- #viewMore{
-  padding: 1em;
+.LRPadding{
+  padding: 0 var(--borderPadding) 0;
+}
+
+.LRBPadding{
+  padding: 0 var(--borderPadding) var(--borderPadding) var(--borderPadding);
+}
+
+/*
+.summaryB{
+  float:left;
+  font-size: var(--mainFontSize);
+  max-width: 100%;
+  padding-right: var(--borderPadding);
+
+  // Main Layout
+.textImg{
+
+  display: flex;
+  flex-flow: row wrap;
+  //flex-direction: column;
+  align-items: center;
+  padding: var(--largeBreak) var(--borderPadding);
+
+}
+
+.summary{
+
+ //background-color: blue;
+  float: left;
+  max-width: 100%;
+  text-align: left;
+  flex: 200px;
+
+  font-size: var(--mainFontSize);
+  color: rgb(225, 225, 225);
+  }
+
+.img1{
+  float: right;
+  width: auto;
+  margin-left: auto;
+  flex: 10px;
+}
+
+.img2{
+  display: flex;
   float: right;
   margin-left: auto;
-  font-size: var(--mainFontSize);
 }
+
+
+.scaleImg1{
+  width: 100%;
+  height: auto;
+  min-width: 40vw;
+}
+
+.scaleImg2{
+
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
+
+}
+
+// Features
+
+.font2{
+  font-size: var(--secondaryFontSize);
+}
+.RFloat{
+  float: right;
+}
+
+.sectionTitle{
+
+  color: var(--secondaryTextColor);
+  font-size: var(--secondaryFontSize);
+  
+}
+
+.link{
+  color: var(--linkColor);
+}
+
+
+.LRPadding{
+  padding: 0 var(--borderPadding) 0;
+}
+
+.LRBPadding{
+  padding: 0 var(--borderPadding) var(--borderPadding) var(--borderPadding);
+}
+
+}
+*/
