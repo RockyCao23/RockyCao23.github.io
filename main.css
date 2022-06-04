@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+:root {
+  --linkColor: #95e56a;
+  --mainTextColor:#e1e1e1;
+  --secondaryTextColor:#828282;
+  --mainFontSize: 1em;
+  --secondaryFontSize: 0.75em;
+  --borderPadding: 1em;
+  --largeBreak: 5em
+;
+}
+
+body {
+  background-color: #242323;
+  color: var(--mainTextColor);
+  font-family: 'roboto mono';
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.introduction {
+  word-wrap: break-word;
+  width: 25em;
+  font-size: var(--mainFontSize);
+}
+
+.menu {
+  text-align: right;
+  list-style: none;
+  font-size: var(--secondaryFontSize);
+  float: right;
+  margin-left: auto;
+  padding: 1em 0;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: var(--mainTextColor);
+}
+
+.menuLink:hover {
+  font-weight: 200;
+}
+
+.textImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: var(--largeBreak) var(--borderPadding);
+}
+
+.summary {
+  margin: 0 1em 1em 0;
+  text-align: left;
+  -webkit-box-flex: 300px;
+      -ms-flex: 300px;
+          flex: 300px;
+  font-size: var(--mainFontSize);
+  color: #e1e1e1;
+}
+
+.img1 {
+  text-align: right;
+  margin-left: auto;
+  -webkit-box-flex: 300px;
+      -ms-flex: 300px;
+          flex: 300px;
+}
+
+.img2 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 150px;
+          flex: 2 150px;
+  float: right;
+  margin-left: auto;
+}
+
+.scaleImg1 {
+  width: 100%;
+  height: auto;
+  min-width: 40vw;
+}
+
+.scaleImg2 {
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
+}
+
+.font2 {
+  font-size: var(--secondaryFontSize);
+}
+
+.RFloat {
+  float: right;
+}
+
+.sectionTitle {
+  color: var(--secondaryTextColor);
+  font-size: var(--secondaryFontSize);
+}
+
+.link {
+  color: var(--linkColor);
+}
+
+.LRPadding {
+  padding: 0 var(--borderPadding) 0;
+}
+
+.LRBPadding {
+  padding: 0 var(--borderPadding) var(--borderPadding) var(--borderPadding);
+}
+
+/*
+.summaryB{
+  float:left;
+  font-size: var(--mainFontSize);
+  max-width: 100%;
+  padding-right: var(--borderPadding);
+
+  // Main Layout
+.textImg{
+
+  display: flex;
+  flex-flow: row wrap;
+  //flex-direction: column;
+  align-items: center;
+  padding: var(--largeBreak) var(--borderPadding);
+
+}
+
+.summary{
+
+ //background-color: blue;
+  float: left;
+  max-width: 100%;
+  text-align: left;
+  flex: 200px;
+
+  font-size: var(--mainFontSize);
+  color: rgb(225, 225, 225);
+  }
+
+.img1{
+  float: right;
+  width: auto;
+  margin-left: auto;
+  flex: 10px;
+}
+
+.img2{
+  display: flex;
+  float: right;
+  margin-left: auto;
+}
+
+
+.scaleImg1{
+  width: 100%;
+  height: auto;
+  min-width: 40vw;
+}
+
+.scaleImg2{
+
+  width: 100%;
+  height: auto;
+  min-width: 30vw;
+
+}
+
+// Features
+
+.font2{
+  font-size: var(--secondaryFontSize);
+}
+.RFloat{
+  float: right;
+}
+
+.sectionTitle{
+
+  color: var(--secondaryTextColor);
+  font-size: var(--secondaryFontSize);
+  
+}
+
+.link{
+  color: var(--linkColor);
+}
+
+
+.LRPadding{
+  padding: 0 var(--borderPadding) 0;
+}
+
+.LRBPadding{
+  padding: 0 var(--borderPadding) var(--borderPadding) var(--borderPadding);
+}
+
+}
+*/
+/*# sourceMappingURL=main.css.map */
