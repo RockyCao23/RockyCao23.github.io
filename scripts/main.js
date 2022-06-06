@@ -10,6 +10,7 @@ window.addEventListener('scroll', () => {
 
  if (currentScroll <= 0) {
   body.classList.remove("scroll-up")
+  body.classList.remove("scroll-down")
  }
 
  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
