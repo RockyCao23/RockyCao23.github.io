@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
   body.classList.remove("scroll-down")
  }
 
- if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+ if (currentScroll > lastScroll && !body.classList.contains("scroll-down") && currentScroll > 55) {
 body.classList.remove("scroll-up")
 body.classList.add("scroll-down")
  }
