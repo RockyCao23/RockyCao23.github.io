@@ -1,19 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap");
+@font-face {
+  font-family: Craftsman;
+  src: url(fonts/logoFont.ttf);
+}
+
 :root {
   --linkColor: #95e56a;
   --mainTextColor:#e1e1e1;
   --secondaryTextColor:#828282;
+  --backroundColor: #242323;
   --mainFontSize: 1em;
   --secondaryFontSize: 0.75em;
   --borderPadding: 1em;
-  --largeBreak: 5em
-;
+  --largeBreak: 5em;
+  --mainFont: 'roboto mono';
+  --logoSize: 4.5em;
+  --colaRed: #F40009;
+  --babyBlue: #89CFF8;
+  --grapeFruit: #FF5349;
+  --artSubtitleWidth: 5em;
 }
 
 body {
-  background-color: #242323;
+  background-color: var(--backroundColor);
   color: var(--mainTextColor);
-  font-family: 'roboto mono';
+  font-family: var(--mainFont);
 }
 
 .topbar {
@@ -22,10 +33,11 @@ body {
   display: flex;
 }
 
-.introduction {
-  word-wrap: break-word;
-  width: 25em;
-  font-size: var(--mainFontSize);
+.logo {
+  font-family: Craftsman;
+  font-size: var(--logoSize);
+  text-decoration: none;
+  color: var(--colaRed);
 }
 
 .menu {
@@ -46,6 +58,12 @@ body {
   font-weight: 200;
 }
 
+.introduction {
+  word-wrap: break-word;
+  width: 25em;
+  font-size: var(--mainFontSize);
+}
+
 .textImg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,9 +81,9 @@ body {
 .summary {
   margin: 0 1em 1em 0;
   text-align: left;
-  -webkit-box-flex: 300px;
-      -ms-flex: 300px;
-          flex: 300px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 150px;
+          flex: 3 150px;
   font-size: var(--mainFontSize);
   color: #e1e1e1;
 }
@@ -73,9 +91,9 @@ body {
 .img1 {
   text-align: right;
   margin-left: auto;
-  -webkit-box-flex: 300px;
-      -ms-flex: 300px;
-          flex: 300px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 150px;
+          flex: 2 150px;
 }
 
 .img2 {
@@ -127,93 +145,31 @@ body {
   padding: 0 var(--borderPadding) var(--borderPadding) var(--borderPadding);
 }
 
-/*
-.summaryB{
-  float:left;
-  font-size: var(--mainFontSize);
-  max-width: 100%;
-  padding-right: var(--borderPadding);
-
-  // Main Layout
-.textImg{
-
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  //flex-direction: column;
-  align-items: center;
-  padding: var(--largeBreak) var(--borderPadding);
-
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.summary{
-
- //background-color: blue;
-  float: left;
-  max-width: 100%;
-  text-align: left;
-  flex: 200px;
-
-  font-size: var(--mainFontSize);
-  color: rgb(225, 225, 225);
-  }
-
-.img1{
-  float: right;
-  width: auto;
-  margin-left: auto;
-  flex: 10px;
-}
-
-.img2{
-  display: flex;
-  float: right;
-  margin-left: auto;
-}
-
-
-.scaleImg1{
-  width: 100%;
-  height: auto;
-  min-width: 40vw;
-}
-
-.scaleImg2{
-
-  width: 100%;
-  height: auto;
-  min-width: 30vw;
-
-}
-
-// Features
-
-.font2{
-  font-size: var(--secondaryFontSize);
-}
-.RFloat{
-  float: right;
-}
-
-.sectionTitle{
-
+.subtitle {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 250px;
+          flex: 1 250px;
+  text-align: center;
   color: var(--secondaryTextColor);
-  font-size: var(--secondaryFontSize);
-  
 }
 
-.link{
-  color: var(--linkColor);
+.art {
+  background-color: red;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 250px;
+          flex: 2 250px;
 }
-
-
-.LRPadding{
-  padding: 0 var(--borderPadding) 0;
-}
-
-.LRBPadding{
-  padding: 0 var(--borderPadding) var(--borderPadding) var(--borderPadding);
-}
-
-}
-*/
 /*# sourceMappingURL=main.css.map */
