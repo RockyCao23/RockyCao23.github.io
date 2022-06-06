@@ -22,9 +22,7 @@
 }
 
 body {
-  margin: 2px;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
+  margin: 0;
   background-color: var(--backroundColor);
   color: var(--mainTextColor);
   font-family: var(--mainFont);
@@ -60,6 +58,7 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-left: auto;
+  padding-left: 0.5em;
 }
 
 .logo:hover {
