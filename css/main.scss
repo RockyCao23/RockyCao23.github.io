@@ -15,12 +15,16 @@
   --borderPadding: 1em;
   --largeBreak: 5em;
   --mainFont: 'roboto mono';
-  --logoSize: 5em;
+  --logoSize: 3em;
 
   --colaRed: #F40009;
   --babyBlue: #89CFF8;
   --grapeFruit: #FF5349;
+  --nearBlack: #151515;
+  --pastelYellow:#F7F6CF;
 
+  --topMargin: 6em;
+  --menuListWidth: 0.75em;
   --artSubtitleWidth: 5em;
 }
 
@@ -30,9 +34,7 @@
 
 body{
 
-  //margin:2px;
-  //margin: 0;
- background-color: var(--backroundColor);
+ background-color: var(--nearBlack);
  color: var(--mainTextColor);
  font-family:var(--mainFont);
 }
@@ -42,17 +44,15 @@ body{
 
 .navbar{
 
-  //background-color: black;
+  //background-color: var(--nearBlack);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10000;
   transition: all 0.3s;
-  width: 100%;
-
-  justify-content: center;
-  align-items: center;
+  //width: 100%;
+  //align-items: center;
   display: flex;
 
 }
@@ -66,7 +66,7 @@ body{
   color: var(--colaRed);
   transition: 0.4s;
   margin-left: auto;
-  padding-left: 0.5em;
+  padding: 0.5em 0 0 1em;
 }
 .logo:hover{
   color: var(--babyBlue);
@@ -74,16 +74,23 @@ body{
 
 .menu{
 
+  //background-color: red;
   text-align: right;
   list-style: none;
   font-size: var(--secondaryFontSize);
   //float: right;
   margin-left: auto;
-  margin-right: 3em;
-  padding: 1em 0;
+  margin-right: var(--borderPadding);
+  padding: --borderPadding 0;
+
+  li{
+    margin-bottom: var(--menuListWidth);
+  }
+  
 }
 
 // Specifically for Menu
+
 
 .menuLink{
   text-decoration: none;
@@ -210,14 +217,14 @@ body{
 }
 
 .scroll-up .navbar{
-  background-color: #151515;
+  //background-color: #151515;
   .logo{
     color:#F7F6CF;
   }
 }
 
 .topMargin{
-  margin-top: 8em;
+  margin-top: var(--topMargin);
 }
 
 

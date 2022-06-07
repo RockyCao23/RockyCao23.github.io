@@ -14,15 +14,19 @@
   --borderPadding: 1em;
   --largeBreak: 5em;
   --mainFont: 'roboto mono';
-  --logoSize: 5em;
+  --logoSize: 3em;
   --colaRed: #F40009;
   --babyBlue: #89CFF8;
   --grapeFruit: #FF5349;
+  --nearBlack: #151515;
+  --pastelYellow:#F7F6CF;
+  --topMargin: 6em;
+  --menuListWidth: 0.75em;
   --artSubtitleWidth: 5em;
 }
 
 body {
-  background-color: var(--backroundColor);
+  background-color: var(--nearBlack);
   color: var(--mainTextColor);
   font-family: var(--mainFont);
 }
@@ -36,13 +40,6 @@ body {
   z-index: 10000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +54,7 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   margin-left: auto;
-  padding-left: 0.5em;
+  padding: 0.5em 0 0 1em;
 }
 
 .logo:hover {
@@ -69,8 +66,12 @@ body {
   list-style: none;
   font-size: var(--secondaryFontSize);
   margin-left: auto;
-  margin-right: 3em;
-  padding: 1em 0;
+  margin-right: var(--borderPadding);
+  padding: --borderPadding 0;
+}
+
+.menu li {
+  margin-bottom: var(--menuListWidth);
 }
 
 .menuLink {
@@ -202,15 +203,11 @@ body {
           transform: translate3d(0, -100%, 0);
 }
 
-.scroll-up .navbar {
-  background-color: #151515;
-}
-
 .scroll-up .navbar .logo {
   color: #F7F6CF;
 }
 
 .topMargin {
-  margin-top: 8em;
+  margin-top: var(--topMargin);
 }
 /*# sourceMappingURL=main.css.map */
