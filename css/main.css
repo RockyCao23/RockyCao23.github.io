@@ -66,8 +66,7 @@ body {
   list-style: none;
   font-size: var(--secondaryFontSize);
   margin-left: auto;
-  margin-right: var(--borderPadding);
-  padding: --borderPadding 0;
+  padding: var(--borderPadding);
 }
 
 .menu li {
@@ -85,7 +84,7 @@ body {
 
 .introduction {
   word-wrap: break-word;
-  width: 25em;
+  width: 60%;
   font-size: var(--mainFontSize);
 }
 
@@ -163,7 +162,7 @@ body {
 }
 
 .LRPadding {
-  padding: 0 var(--borderPadding) 0;
+  padding: 0 var(--borderPadding);
 }
 
 .LRBPadding {
