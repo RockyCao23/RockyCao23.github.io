@@ -144,6 +144,12 @@ body {
   min-width: 30vw;
 }
 
+.scaleImg3 {
+  width: 100%;
+  height: auto;
+  min-width: 50vw;
+}
+
 .font2 {
   font-size: var(--secondaryFontSize);
 }

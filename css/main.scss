@@ -127,7 +127,7 @@ body{
   text-align: right;
   margin-left: auto;
   flex: 2 150px;
- // max-width: 500px;
+
 }
 
 .img2{
@@ -146,12 +146,17 @@ body{
   min-width: 40vw;
 }
 
-
 .scaleImg2{
   width: 100%;
   height: auto;
   min-width: 30vw;
 
+}
+
+.scaleImg3{
+  width: 100%;
+  height: auto;
+  min-width: 50vw;
 }
 
 // Features
