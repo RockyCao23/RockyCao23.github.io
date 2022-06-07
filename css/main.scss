@@ -111,9 +111,10 @@ body{
 
 .summary{
 
+  background-color: red;
   margin: 0 1em 1em 0;
   text-align: left;
-  flex: 3 150px;
+  flex: 9 25px;
 
   font-size: var(--mainFontSize);
   color: rgb(225, 225, 225);
@@ -121,9 +122,10 @@ body{
 
 .img1{
 
+  background-color: blue;
   text-align: right;
   margin-left: auto;
-  flex: 2 150px;
+  flex: 6 25px;
  // max-width: 500px;
 }
 
@@ -131,8 +133,8 @@ body{
 
   text-align: center;
   display: flex;
-  flex: 2 150px;
-  float: right;
+  flex: 6 25px;
+  //float: right;
   margin-left: auto;
 }
 
@@ -192,7 +194,7 @@ body{
 
 .subtitle{
 
-  flex: 1 250px;
+  flex: 5 25px;
   text-align: center;
   color: var(--secondaryTextColor);
 
@@ -201,7 +203,7 @@ body{
 .art{
 
   background-color: red;
-  flex: 2 250px;
+  flex: 10 25px;
 
 }
 

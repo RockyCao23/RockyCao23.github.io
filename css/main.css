@@ -103,21 +103,23 @@ body {
 }
 
 .summary {
+  background-color: red;
   margin: 0 1em 1em 0;
   text-align: left;
-  -webkit-box-flex: 3;
-      -ms-flex: 3 150px;
-          flex: 3 150px;
+  -webkit-box-flex: 9;
+      -ms-flex: 9 25px;
+          flex: 9 25px;
   font-size: var(--mainFontSize);
   color: #e1e1e1;
 }
 
 .img1 {
+  background-color: blue;
   text-align: right;
   margin-left: auto;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 150px;
-          flex: 2 150px;
+  -webkit-box-flex: 6;
+      -ms-flex: 6 25px;
+          flex: 6 25px;
 }
 
 .img2 {
@@ -125,10 +127,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 150px;
-          flex: 2 150px;
-  float: right;
+  -webkit-box-flex: 6;
+      -ms-flex: 6 25px;
+          flex: 6 25px;
   margin-left: auto;
 }
 
@@ -183,18 +184,18 @@ body {
 }
 
 .subtitle {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 250px;
-          flex: 1 250px;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 25px;
+          flex: 5 25px;
   text-align: center;
   color: var(--secondaryTextColor);
 }
 
 .art {
   background-color: red;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 250px;
-          flex: 2 250px;
+  -webkit-box-flex: 10;
+      -ms-flex: 10 25px;
+          flex: 10 25px;
 }
 
 .scroll-down .navbar {
