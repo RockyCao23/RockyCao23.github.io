@@ -132,6 +132,10 @@ body {
   margin-left: auto;
 }
 
+.socialLogo {
+  width: 25px;
+}
+
 .scaleImg1 {
   width: 100%;
   height: auto;
