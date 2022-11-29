@@ -20,6 +20,7 @@
   --colaRed: #F40009;
   --babyBlue: #89CFF8;
   --grapeFruit: #FF5349;
+  --zeroPink: #C07C7C;
   --nearBlack: #151515;
   --pastelYellow:#F7F6CF;
 
@@ -60,7 +61,7 @@ body{
   font-family: Craftsman;
   font-size: var(--logoSize);
   text-decoration: none;
-  color: var(--colaRed);
+  color: var(--zeroPink);
   transition: 0.4s;
   margin-left: auto;
   padding: 0.5em 0 0 2em;
