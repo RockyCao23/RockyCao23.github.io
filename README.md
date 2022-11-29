@@ -1,3 +1,5 @@
 # RockyCao23.github.io
 
-Hello this is my first webpage
+This is my website. 
+Created May 2022. 
+Built from pure HTML and CSS
