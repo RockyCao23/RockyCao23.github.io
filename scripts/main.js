@@ -1,6 +1,13 @@
 
 const body = document.body;
+projectItem = document.querySelector(".item");
 
+/*
+console.log(projectItem);
+projectItem.addEventListener('click', (event)=>{
+  body.style.backgroundColor = blue;
+})
+*/
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
@@ -24,3 +31,5 @@ body.classList.add("scroll-down")
 
  lastScroll = currentScroll;
 })
+
+
