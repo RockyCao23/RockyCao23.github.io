@@ -101,8 +101,8 @@ body {
   width: calc(var(--leftColumnWidth) - 2*var(--margin));
   height: calc(100% - 2*var(--margin));
   z-index: 1;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.25)), to(white));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), white);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(white));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
 #introduction {
@@ -360,6 +360,7 @@ body {
   position: absolute;
   top: 0;
   left: -2.5em;
+  z-index: 99;
 }
 
 .title {

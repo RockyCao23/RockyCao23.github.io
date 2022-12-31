@@ -103,7 +103,7 @@ body{
   width: calc(var(--leftColumnWidth) - 2*var(--margin));
   height: calc(100% - 2*var(--margin));
   z-index: 1;
-  background-image: linear-gradient(to left, rgba(255,255,255,0.25), rgba(255,255,255,1));
+  background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1));
 }
 
 
@@ -297,6 +297,7 @@ top: 5em;
   position: absolute;
   top: 0;
   left: -2.5em;
+  z-index: 99;
   //background-color: red;
 }
 
