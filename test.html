@@ -5,497 +5,197 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Testing</title>
- <link rel="stylesheet" href="css/test.css">
+ <title>Rocky's Website</title>
+ <link rel="stylesheet" href="css/main.css">
 
-<body class="removeScrollX">
-  
-<!--  Left Column 
-      Includes Introduction, Description, and Visual
--->
-  <div class = "container" id = "leftColumn">
 
-    <div id = "introduction">
 
-      Hi, I'm <span class = "underline">Rocky</span>. I create mechanical, electrical, and software designs.
+</head>
 
-    </div>
+<!--------------------------------------------------->
 
-    <br>
 
-    <div class = "description">
-      Second year Integrated Engineering student at the University of British Columbia. Member of the UBC Thunderbots, RoboCup SSL Team.
-    </div>
-      
-    <img id = "mySilhouette" src="images/Masterpiece.png" alt="">
+<body>
+
+  <div class="navbar LRPadding">
+
+
+    <a class = "logo" href="index.html">Rockys</a>
+
+ 
+    <ul class="menu">
+
+      <li>
+        <a class="menuLink" href="projects.html">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a class="menuLink" href="art.html">
+          Art
+        </a>
+      </li>
+      <li>
+        <a class="menuLink" href="about.html">
+          About
+        </a>
+      </li>
+      <li>
+        <a class="test" 
+        href="test.html">
+          test
+        </a>
+      </li>
+
+    </ul>
 
   </div>
 
 
-<!--  Right Column 
-      Includes Projects
--->
-
-<div class = "rightColumn container">
-
-<!--Thunderbots-->
-  <div class = "projectPage hidden">
-
-    <img class = "returnArrow clickable" src="images/leftArrow.png" alt=""
-    onclick = "returnToCatalogue(this.parentElement)">
-
-    <div class = "title">
-      UBC Thunderbots
-    </div>
-
-    <div class = "projectLayout">
-      <div class = "projectGrid" id = "thunderbotsProject">
-
-        <div class = "gridItem  g12-12">
-   
-          <div class = "gridText">
-            <!--
-            While a majority of my time spent on campus is inside the lecture hall, I also spend my time either wandering, eating, talking... or of course, working on projects for my engineering design team, UBC Thunderbots.
-            -->
-
-            UBC Thunderbots is an engineering student design team that designs, builds, and programs eight autonomous robots to compete in the Small Size League of the <span class = "underline"><a href="https://www.robocup.org/">International Robocup Federation</a></span>. In other words, we build a team of robots that play soccer.<em> If you're curious, they play with golf balls that are colored orange.</em>
-  
-          <br>
-          <br>
-
-            Our robots are built from the ground up and play fully autonomously. We have our own software architecture that runs the decision making AI, we design custom PCBs, and we also design and manufacture our own hardware using Solidworks and at student machine shops. All our work is open source so drop by our github if you're interested in what we do: <span class = "underline"><a href="https://github.com/UBC-Thunderbots">UBC Thunderbots</a></span>
-
-          </div>
-
-        </div>
-  
-        <div class = "gridItem g12-23">
-
-        <img class = "gridImage" src="images/thunderbotsRobotWireframe.png" alt="">
-
-        </div>
-
-
-        <div class = "gridItem g23-13">
-          <img class = "gridImage" src="gifs/thunderbotsGameplay.gif" alt="">
-        </div>
-
-        <div class = "gridItem g34-12">
-          <div class = "gridText">
-            I joined the team as a mechanical member in my first academic year, and have since travelled with the team to compete in Bangkok, Thailand, optimized the chipping subsystem, and presented our work at outreach events.
-            <br>
-            <br>
-            Currently, I am leading the redesign of the dribbler subsystem and integration between the mechanical and electrical subteams for the redesign of the breakbeam subsystem. Particularily, I am focusing on the research and development of the dribbler damping system; incoporating the use of compliant mechanisms.
-          </div>
-        </div>
-
-        <div class = "gridItem g34-23">
-          <img class = "gridImage" src="images/ThunderbotsTeam.JPG" alt="">
-        </div>
-
-        <div class = "gridItem g45-12">
-          <img class = "gridImage" src="images/thunderbotsDribblerWireframe.png" alt="">
-        </div>
-
-        <div class = "gridItem g45-23">
-          The dribbler subsystem is what allows each individual robot to handle the ball. It usually consists of a roller which continuously exerts an inward spin on the ball. An important property of the dribbler that I am currently working on is dribbler damping.
-          <br>
-          <br>
-          Damping plays a crucial role for a successful dribbler. A robust damper allows a robot to catch and dribble a ball without furious vibrations that may cause a ball to release itself from the robot. A successful damper is one that is tuned such that the robot is able handle the ball while executing specific plays, and perform well under a variety of conditions. These plays include lateral and rotational movement, as well as static handling of the ball.
-
-
-        </div>
-        
-        <div class = "gridItem g56-12">
-          <div class = "gridText">
-            On the left is the seventh iteration of a flexure I have designed to be used as a damper.
-            <br>
-            <br>
-            The motivation to design a damper using compliant mechanisms is primarily due to its flexible nature in design. Because of the chaotic nature of the sport, it's impossible to achieve a critically damped system for all situations. However, it is still important to be able to tune the damper such that we get an overdamped system that is near critically damped for most scenerios we know the robots will encounter.
-            <br>
-            <br>
-            Compliant mechanisms offer that flexibility. By altering the design slightly, we can achieve a component with darastically different properties with ease and low costs. 
-            <br>
-            <br>
-            I have composed a write-up for our dribbling subsystem which has detailed explanations of how the system works and design rationals: <span class = "underline"><a href="https://docs.google.com/document/d/1QWA_PCXyuJnqPrqY5OopkVauhRQ4cs7WKxSCV2JAvPs/edit#heading=h.ictnize1koyn">Dribbler Write-Up</a></span>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-     
+  <div class="introduction LRPadding topMargin">
+      <p>
+        <!--Welcome to my Website. <br> Displayed here are some things I've done.
+        -->
+      </p>
   </div>
 
-<!--Claw-->
-  <div class = "projectPage hidden">
 
-    <img class = "returnArrow clickable" src="images/leftArrow.png" alt=""
-    onclick = "returnToCatalogue(this.parentElement)">
+  <div class = "LRPadding">
 
-    <div class = "title">
-      Claw
+    <img class = "scaleImg1" src="images/Shoe_Kaws_Duo.png" alt="#">
+
+  </div>
+  
+
+  <div class = "LRPadding">
+
+    <p class = "RFloat font2">
+      Shoe Art by Me. <a class = "link" href="art.html"> Click to View More></a>
+    </p>
+
+    <br><br><br>
+  
+
+    <hr style = "width: 100%; text-align: center; font-size: 2em;">
+
+    <div class = "sectionTitle">
+      <h1>
+        Featured◢
+      </h1>
     </div>
-
-    <div class = "projectLayout">
-      <div class = "projectGrid" id = "clawProject">
-
-        <div class = "gridItem  g12-12">
-   
-          <div class = "gridText">
-            A mechanical claw built for my UBC APSC 101 class.
-            <br><br>
-            This was a team project and consisting of using an Arduino starter-kit and common household materials. Why I specifically chose to include this team project in my portfolio is because I personally designed and built this claw for the team. I was very proud of the final product and its performance in the class competition. The program was written both by me and another student. 
-          </div>
-
+  </div>
     
-        </div>
-        <div class = "gridItem g12-23">
+  <br><br><br>
 
-          <img class = "gridImage" src="images/clawPhoto.png" alt="">
-  
-          </div>
+  <!-- The body: consists of projects-->
+ 
 
+  <div class="textImg">
 
-        <div class = "gridItem g23-12">
-          <img class = "gridImage" src="gifs/APSC101_Claw_Gif.gif" alt="">
-        </div>
-        <div class = "gridItem g23-23">
-          <img class = "gridImage" src="gifs/APSC101_Claw_Gif2.gif" alt="">
-        </div>
+    <div class="summary">
 
-        <div class = "gridItem g34-12">
-          <div class = "gridText">
-            The claw was built using electonic devices included in the Arduino Starter-Kit, and the body was build with common household items: popsicle sticks, tape, wooden chopsticks, etc.
-            <br><br>
-            The claw activates by the distance from which a sonar sensor is from the ground. The claw open/closes by a servo, which pulls vertically on three arms that move laterally. The three arms are connected to the servo via a fishing line. 
-          </div>
-        </div>
-
-        <div class = "gridItem g34-23">
-          <img class = "gridImage" src="images/clawPrototypes.png" alt="">
-        </div>
-
-        <div class = "gridItem g45-13">
-          <img class = "gridImage" src="images/Messy_Room.jpg" alt="">
-        </div>
-
-        <div class = "gridItem g56-23">
-          <img class = "gridImage" src="images/Shooting_Scene.jpg" alt="">
-        </div>
-        
-        
-        <div class = "gridItem g56-12">
-            I was very proud of this project since the product was very successful and it looks awesome. I designed entirely, and built the claw mainly by myself; however, I give credit to my team for creating the engineering drawings, poster, program, and their physical help during class time.
-            <br><br>
-            On the left is a picture of my room when building the claw dated: Feb 5, 2022 | 2:23am. While I usually sleep at or before midnight, I had a lot of fun building and testing this claw - so much that I willingly stayed up late even though it was not due the next day.
-            <br><br>
-            The image on the bottom is a view of how I took the videos of my claw, presented in the gifs above. My phone would lean against my wallet, above the tissues to get a still shot. 
-  
-        </div>
-
-      </div>
+      <h1>
+        Mechanical Claw
+      </h1>
+      <h4>
+        APSC 101 Module 5 Project | Feb 2022
+      </h4>
+      <p>
+        A mechanical claw built for my UBC APSC 101 class. 
+        <br>
+        This was a team project and it consisted of using an Arduino starter-kit and common household materials.
+      </p>
+      <a class = "link"  href="claw.html" >
+        Read More>
+      </a>
 
     </div>
-
-     
-  </div>
-
-  <!--arduinoCar-->
-  <div class = "projectPage hidden">
-
-    <img class = "returnArrow clickable" src="images/leftArrow.png" alt=""
-    onclick = "returnToCatalogue(this.parentElement)">
-
-    <div class = "title">
-      Arduino Car
-    </div>
-
-    <div class = "projectLayout">
-      <div class = "projectGrid" id = "arduinoCarProject">
-
-        <div class = "gridItem  g12-12">
-   
-          <div class = "gridText">
-            Autonomous vehicle built for my grade 12 capstone project.
-            <br>
-            This project consisted of using an Elegoo microcontroller + starter-kit and old toy parts + lego. It was my first time using a microcontroller to create a moving device. Everything was self-taught, self-built; and it was the project that helped me make my decision to go into engineering. 
-          </div>
-
     
-        </div>
-  
-        <div class = "gridItem g12-23">
-
-          <img class = "gridImage" src="images/Car_Photo3.jpg" alt="">
-
-        </div>
-
-
-        <div class = "gridItem g23-12">
-
-          <img class = "gridImage" src="gifs/Arduino_Car_Axle_Test_MOV_AdobeCreativeCloudExpress.gif" alt="">
-
-        </div>
-        <div class = "gridItem g23-23">
-          In december 2020, I was introduced to a thing called an Arduino by Mark Rober - a popular youtuber - who was advertising a class he was teaching built around teaching people how to build cool devices using arduino and raspberry pi. It was a $500 course which I obviously wasn't willing to spend because I thought to myself that, "I could learn this all by myself." And so, I decided to do my own research on what an Arduino is and to make Arduino controlled thing myself.
-          <br><br>
-          Instead of buying an Arduino Starter-Kit, I bought an amazon alternative Elegoo Starter-Kit - which was basically the same thing, but cheaper.
-          <br><br>
-          I incoporated this as my capstone project for highschool; and from there on, I decided to make a self-driving car - a car that avoids walls. 
-          <br><br>
-          At the time, I knew the Java programming language; and luckily, that was enough to get me started in teaching myself C which is used in programming an Arduino.
-          
-        </div>
-
-        <div class = "gridItem g34-12">
-          <img class = "gridImage" src="images/carAxle.png" alt="">
-        </div>
-
-
-        <div class = "gridItem g34-23">
-
-          I followed many YouTube tutorials on how breadboards and IO devices work. And my school's robotics team was generous enough to provide me with their recycling bin which consisted of old electronic VEX motors, which I figured how to make combatible with my microcontroller.
-          <br><br>
-            However, the greatest challenge came when building the chassis. Specifically, finding parts. I scoured my old toys and legos to find parts that could help me build a working car axle. This was the greatest challenge as I didn't have enough of the same parts and had to find alterntive ways of doing things. But I personally think it's the coolest part of the car; and the part I'm most proud of besides the final product. 
-            <br><br>
-            The vehicle is suppose to detect whether it is going to hit a wall or not, determine whether there is more space on the left or right, and to do a two-point turn to the side determined.
-
-            The video on the right is the first successful run of the car working as designed. 
-
-        </div>
-
-        <div class = "gridItem g45-13">
-          <video class = "gridImage" width="350"controls muted>
-            <source class="scaleImg1" src="images/Arduino_Car_Vid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-        </div>
-
-
-      </div>
-
+    <div class="img1">
+      <img class = "scaleImg1" src= images/Claw_Photo_Square.jpg alt="ERROR: photo unable to load" >
     </div>
-
-     
-  </div>
-
-  <!--boxCar-->
-  <div class = "projectPage hidden">
-
-    <img class = "returnArrow clickable" src="images/leftArrow.png" alt=""
-    onclick = "returnToCatalogue(this.parentElement)">
-
-    <div class = "title">
-      Box Car
-    </div>
-
-    <div class = "projectLayout">
-      <div class = "projectGrid" id = "boxCarProject">
-
-        <div class = "gridItem  g12-12">
     
-          <div class = "gridText">
-            Line following robot for second year project course.
-            <br>
-            This project consisted of using an arduino microcontroller, L298N H-Bridge Board, FA-130 RA brush motor, and QRD1114 Reflective Sensors. 
-          </div>
+  </div>
 
+
+  <div class = "textImg">
+
+    <div class = "summary">
+
+      <h1>
+        Autonomous Vehicle
+      </h1>
+      <h4>
+        Personal Project | Mar 2021
+      </h4>
+      <p>
+        Autonomous vehicle built for my grade 12 capstone project.
+        <br>
+        This project consisted of using an Elegoo microcontroller, simple input/output devices, and old toy parts + lego.
+      </p>
+      <a class = "link" href="car.html">
+        Read More>
+      </a>
+
+    </div>
     
-        </div>
+    <div class = "img1">
 
-        <div class = "gridItem g12-23">
-
-          <img class = "gridImage" src="images/boxCarNotes.jpg" alt="">
-
-        </div>
-
-
-
-        <div class = "gridItem g23-13">
-
-          <img class = "gridImage" src="images/boxCarTop.jpg" alt="">
-
-        </div>
-  
-        <div class = "gridItem g34-13">
-          <img class = "gridImage" src="images/boxCarUnder.jpg" alt="">
-          
-        </div>
-
-
-
-        <div class = "gridItem g45-13">
-          <img class = "gridImage" src="gifs/boxCarMoving.gif" alt="">
-        </div>
-
-
-      </div>
+      <img  class = "scaleImg1" src= images/Car_Photo_Square.jpg alt="no gif" >
 
     </div>
 
-      
+
   </div>
 
-  <!--roblox-->
-  <div class = "projectPage hidden">
 
-    <img class = "returnArrow clickable" src="images/leftArrow.png" alt=""
-    onclick = "returnToCatalogue(this.parentElement)">
 
-    <div class = "title">
-      Roblox Game Development
-    </div>
+<a class = "RFloat font2 link LRPadding"  href = "projects.html" >View all Projects></a> 
 
-    <div class = "projectLayout">
-      <div class = "projectGrid" id = "robloxProject">
+<br><br>
 
-        <div class = "gridItem  g12-12">
+<div class = "LRPadding">
+  <hr style = "width: 100%; text-align: center; font-size: 2em;">
+</div>
+
+
+<div class="RFloat">
+
+  <ul class="menu">
+
+    <li>
+      <a class="menuLink" href="https://www.linkedin.com/in/rocky-cao-a9b04321a">
+        Linkedin
+      </a>
+    </li>
+    <li>
+      <a class="menuLink" href="https://www.instagram.com/rockycao_/">
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a class="menuLink" href="https://github.com/RockyCao23">
+        Github
+      </a>
+    </li>
+    <li>
+      <a class="menuLink" href="https://www.goodreads.com/user/show/152133470-rocky">
+        Goodreads
+      </a>
+    </li>
     
-          <div class = "gridText">
-            Standing as one of my more ambitious projects, I've began developing games on the Roblox Studio Platform in the summer of 2021. The programming language Lua was self-taught and used to develop games that are currently still in development. I currently host two public games:
-            <br>
-            <span class="underline"><a href="https://www.roblox.com/games/7135038009/BloxLife-Development">Blox Life</a></span> 
-            <br>
-            <span class="underline"><a href="https://www.roblox.com/games/9709320664/Only-1-claims-the-treasure">Treaasure Hunt</a></span> 
-            
-          </div>
 
-    
-        </div>
-
-        <div class = "gridItem g12-23">
-
-          <img class = "gridImage" src="images/Roblox_GasStation.jpg" alt="">
-
-        </div>
-
-
-
-        <div class = "gridItem g23-12">
-
-          <img class = "gridImage" src="images/robloxTreasure.jpg" alt="">
-
-        </div>
-  
-        <div class = "gridItem g23-23">
-          <img class = "gridImage" src="images/robloxDealership.jpg" alt="">
-          
-        </div>
-
-
-
-        <div class = "gridItem g45-13">
-          <img class = "gridImage" src="gifs/boxCarMoving.gif" alt="">
-        </div>
-
-
-      </div>
-
-    </div>
-
-      
-  </div>
-
-    <!--roblox-->
-    <div class = "projectPage hidden">
-
-      <img class = "returnArrow clickable" src="images/leftArrow.png" alt=""
-      onclick = "returnToCatalogue(this.parentElement)">
-  
-      <div class = "title">
-        Balancing Desk Toy
-      </div>
-  
-      <div class = "projectLayout">
-        <div class = "projectGrid" id = "balancingToyProject">
-  
-          <div class = "gridItem  g12-12">
-      
-            <div class = "gridText">
-              Created in my metalwork class, this is a balancing desk toy and a piece of art. The initial design brief was to create a balancing toy but with cylindrical weights on both ends, and a sheetmetal cutout as the balancing center piece. However, I took the extra step to replace one of the weights with a 3D person snowboarding instead. 
-            </div>
-  
-      
-          </div>
-  
-          <div class = "gridItem g23-12">
-  
-            <img class = "gridImage" src="images/balancingToySide.jpg" alt="">
-  
-          </div>
-  
-          <div class = "gridItem g12-23">
-            <img class = "gridImage" src="images/balancingToy.gif" alt="">
-            
-          </div>
-  
-          <div class = "gridItem g23-23">
-  
-            <img class = "gridImage" src="images/balancingToyClose.jpg" alt="">
-  
-          </div>
-   
-        </div>
-  
-      </div>
-  
-        
-    </div>
-
-<!--ProjectCatalogue-->
-  <div class = "grid" id = "projectCatalogue">
-    
-<!--thunderbots-->
-    <div class = "gridItem">
-      <img class = "gridImage clickable" id = "thunderbots" src="gifs/thunderbotGif.gif" alt="" onclick = "viewProject(this);">
-    </div>
-<!--claw-->
-    <div class = "gridItem">
-      <img class="gridImage clickable" id = "claw" src="images/Claw_Fisheye.jpg" alt="" onclick = "viewProject(this);">
-    </div>
-<!--arduino Car-->
-    <div class = "gridItem">
-      <img class="gridImage clickable" id = "arduinoCar" src="images/arduinoCarSticker.png" alt="" onclick = "viewProject(this);">
-    </div>
-
-<!--box Car-->
-    <div class = "gridItem">
-
-      <img class = "boxCarClosed clickable" id="boxCar" src="images/boxCarSticker.png" 
-      
-      onmouseover="hover(this);" onmouseout="unhover(this);" onclick = "viewProject(this);"/>
-
-    </div>
-
-  <!--Roblox-->
-  <div class = "gridItem">
-
-    <img class = "gridImage clickable" id="roblox" src="images/robloxLambo.png" 
-    onclick = "viewProject(this);"/>
-
-  </div>
-
-  <!--Balancing Toy-->
-  <div class = "gridItem">
-
-    <img class = "gridImage clickable" id="balancingToy" src="images/Balancing_Toy.jpg" 
-    onclick = "viewProject(this);"/>
-
-  </div>
-
-  <!--ART, maybe next time?-->
-
-  </div>
-
-
+  </ul>
 
 </div>
-  
 
 
-  <script src="scripts/testScript.js"></script>
+  <script src="scripts/main.js"></script>
+
+
 </body>
- </html>
+
+
+
+</html>
 
