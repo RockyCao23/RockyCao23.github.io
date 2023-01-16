@@ -8,7 +8,7 @@
  <title>Rocky's Website</title>
  <link rel="stylesheet" href="css/test.css">
 
-<body class="removeScrollX">
+<body class="removeScrollX">  
   
 <!--  Left Column 
       Includes Introduction, Description, and Visual
@@ -25,6 +25,10 @@
 
     <div class = "description">
       Second year Integrated Engineering student at the University of British Columbia. Member of the UBC Thunderbots, RoboCup SSL Team.
+
+      <br>
+      <br>
+      Interested in my work? Click on any of my project icons to learn more.
     </div>
       
     <img id = "mySilhouette" src="images/Masterpiece.png" alt="">
@@ -58,12 +62,12 @@
             While a majority of my time spent on campus is inside the lecture hall, I also spend my time either wandering, eating, talking... or of course, working on projects for my engineering design team, UBC Thunderbots.
             -->
 
-            UBC Thunderbots is an engineering student design team that designs, builds, and programs eight autonomous robots to compete in the Small Size League of the <span class = "underline"><a href="https://www.robocup.org/">International Robocup Federation</a></span>. In other words, we build a team of robots that play soccer.<em> If you're curious, they play with golf balls that are colored orange.</em>
+            UBC Thunderbots is an student engineering design team that designs, builds, and programs eight autonomous soccer playing robots that compete in the Small Size League of the <span class = "underline"><a href="https://www.robocup.org/">International Robocup Federation</a></span>. 
   
           <br>
           <br>
 
-            Our robots are built from the ground up and play fully autonomously. We have our own software architecture that runs the decision making AI, we design custom PCBs, and we also design and manufacture our own hardware using Solidworks and at student machine shops. All our work is open source so drop by our github if you're interested in what we do: <span class = "underline"><a href="https://github.com/UBC-Thunderbots">UBC Thunderbots</a></span>
+            Our robots are built from the ground up and play fully autonomously. We have our own software architecture that runs the decision making AI, we design custom PCBs, and we also design and manufacture our own hardware using SolidWorks and at student machine shops. All our work is open source so drop by our github if you're interested in what we do: <span class = "underline"><a href="https://github.com/UBC-Thunderbots">UBC Thunderbots</a></span>
 
           </div>
 
@@ -71,7 +75,7 @@
   
         <div class = "gridItem g12-23">
 
-        <img class = "gridImage" src="images/thunderbotsRobotWireframe.png" alt="">
+          <img class = "gridImage" src="images/thunderbotsRobotWireframe.png" alt="">
 
         </div>
 
@@ -85,7 +89,7 @@
             I joined the team as a mechanical member in my first academic year, and have since travelled with the team to compete in Bangkok, Thailand, optimized the chipping subsystem, and presented our work at outreach events.
             <br>
             <br>
-            Currently, I am leading the redesign of the dribbler subsystem and integration between the mechanical and electrical subteams for the redesign of the breakbeam subsystem. Particularily, I am focusing on the research and development of the dribbler damping system; incoporating the use of compliant mechanisms.
+            Currently, I am leading the redesign of the dribbler subsystem and handling the integration between the mechanical and electrical subteams for the redesign of the breakbeam subsystem. Particularily, I am focusing on the research and development of compliant mechanisms to be used in our robots' dribbler damping system.
           </div>
         </div>
 
@@ -93,24 +97,21 @@
           <img class = "gridImage" src="images/ThunderbotsTeam.JPG" alt="">
         </div>
 
-        <div class = "gridItem g45-12">
+        <div class = "gridItem g56-12">
           <img class = "gridImage" src="images/thunderbotsDribblerWireframe.png" alt="">
         </div>
 
-        <div class = "gridItem g45-23">
-          The dribbler subsystem is what allows each individual robot to handle the ball. It usually consists of a roller which continuously exerts an inward spin on the ball. An important property of the dribbler that I am currently working on is dribbler damping.
-          <br>
-          <br>
-          Damping plays a crucial role for a successful dribbler. A robust damper allows a robot to catch and dribble a ball without furious vibrations that may cause a ball to release itself from the robot. A successful damper is one that is tuned such that the robot is able handle the ball while executing specific plays, and perform well under a variety of conditions. These plays include lateral and rotational movement, as well as static handling of the ball.
-
-
+        <div class = "gridItem g45-12">
+          <div class = "gridText" >
+            The dribbler subsystem is what allows each individual robot to handle the ball. It usually consists of a roller which continuously exerts an inward spin on the ball. An important property of the dribbler that I am currently working on is dribbler damping.
+            <br>
+            <br>
+            Damping plays a crucial role for a successful dribbler. A robust damper allows a robot to catch and dribble a ball without furious vibrations that may cause a ball to release itself from the robot. A successful damper is one that is tuned such that the robot is able handle the ball while executing specific plays, and perform well under a variety of conditions. These plays include lateral and rotational movement, as well as static handling of the ball.
+  
+          </div>
         </div>
         
-        <div class = "gridItem g56-12">
-          <div class = "gridText">
-            On the left is the seventh iteration of a flexure I have designed to be used as a damper.
-            <br>
-            <br>
+        <div class = "gridItem g45-23">
             The motivation to design a damper using compliant mechanisms is primarily due to its flexible nature in design. Because of the chaotic nature of the sport, it's impossible to achieve a critically damped system for all situations. However, it is still important to be able to tune the damper such that we get an overdamped system that is near critically damped for most scenerios we know the robots will encounter.
             <br>
             <br>
@@ -118,9 +119,24 @@
             <br>
             <br>
             I have composed a write-up for our dribbling subsystem which has detailed explanations of how the system works and design rationals: <span class = "underline"><a href="https://docs.google.com/document/d/1QWA_PCXyuJnqPrqY5OopkVauhRQ4cs7WKxSCV2JAvPs/edit#heading=h.ictnize1koyn">Dribbler Write-Up</a></span>
-          </div>
         </div>
 
+        <div class = "gridItem g56-23">
+          The drawing above is the seventh iteration flexure I have designed to be used in our dribbling system.
+          <br>
+          <br>
+          We decided to 3D print the part with PETG since the material is tougher and more resistant to fatigue as compared to PLA. The flexure is modular in design and compatible with the rest of the assembly. I have drafted fully parameterized drawings on SolidWorks which have streamlined the parameter changing prcoess. 
+          <br>
+          <br>
+          I used SolidWorks Simulations to conduct static analysis on the designs to understand how the component will behave under different conditions. Currently, I am working on finalizing the design; particularily focusing on damping for reverse movement.
+        </div>
+
+        <div class = "gridItem g67-12">
+          <img class = "gridImage" src="images/parameterizedDrawing.jpg" alt="">
+        </div>
+        <div class = "gridItem g67-23">
+          <img class = "gridImage" src="images/drawingSimulation.jpg" alt="">
+        </div>
       </div>
 
     </div>
@@ -146,7 +162,7 @@
           <div class = "gridText">
             A mechanical claw built for my UBC APSC 101 class.
             <br><br>
-            This was a team project and consisting of using an Arduino starter-kit and common household materials. Why I specifically chose to include this team project in my portfolio is because I personally designed and built this claw for the team. I was very proud of the final product and its performance in the class competition. The program was written both by me and another student. 
+            This was a team project and consisting of using an Arduino starter-kit and common household materials. Why I specifically chose to include this team project in my portfolio is because I personally designed and built this claw for the team. I was very proud of the final product and its performance in the class competition. 
           </div>
 
     
@@ -240,11 +256,11 @@
         </div>
         <div class = "gridItem g23-23">
           In december 2020, I was introduced to a thing called an Arduino by Mark Rober - a popular youtuber - who was advertising a class he was teaching built around teaching people how to build cool devices using arduino and raspberry pi. It was a $500 course which I obviously wasn't willing to spend because I thought to myself that, "I could learn this all by myself." And so, I decided to do my own research on what an Arduino is and to make Arduino controlled thing myself.
-          <br><br>
+          <br>
           Instead of buying an Arduino Starter-Kit, I bought an amazon alternative Elegoo Starter-Kit - which was basically the same thing, but cheaper.
-          <br><br>
+          <br>
           I incoporated this as my capstone project for highschool; and from there on, I decided to make a self-driving car - a car that avoids walls. 
-          <br><br>
+          <br>
           At the time, I knew the Java programming language; and luckily, that was enough to get me started in teaching myself C which is used in programming an Arduino.
           
         </div>
@@ -257,12 +273,12 @@
         <div class = "gridItem g34-23">
 
           I followed many YouTube tutorials on how breadboards and IO devices work. And my school's robotics team was generous enough to provide me with their recycling bin which consisted of old electronic VEX motors, which I figured how to make combatible with my microcontroller.
-          <br><br>
-            However, the greatest challenge came when building the chassis. Specifically, finding parts. I scoured my old toys and legos to find parts that could help me build a working car axle. This was the greatest challenge as I didn't have enough of the same parts and had to find alterntive ways of doing things. But I personally think it's the coolest part of the car; and the part I'm most proud of besides the final product. 
-            <br><br>
-            The vehicle is suppose to detect whether it is going to hit a wall or not, determine whether there is more space on the left or right, and to do a two-point turn to the side determined.
+          <br>
+          However, the greatest challenge came when building the chassis. Specifically, finding parts. I scoured my old toys and legos to find parts that could help me build a working car axle. This was the greatest challenge as I didn't have enough of the same parts and had to find alterntive ways of doing things. But I personally think it's the coolest part of the car; and the part I'm most proud of besides the final product. 
+          <br>
+          The vehicle is suppose to detect whether it is going to hit a wall or not, determine whether there is more space on the left or right, and to do a two-point turn to the side determined.
 
-            The video on the right is the first successful run of the car working as designed. 
+          The video on the right is the first successful run of the car working as designed. 
 
         </div>
 

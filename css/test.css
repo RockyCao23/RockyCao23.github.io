@@ -73,18 +73,6 @@ body {
   text-align: justify;
 }
 
-.gridImage {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.gridItem {
-  font-size: var(--fontSizeBody);
-  position: relative;
-}
-
 .boxCarClosed {
   right: -2.25em;
   top: -6em;
@@ -145,17 +133,32 @@ body {
   display: -ms-grid;
   display: grid;
   height: 100%;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
   grid-gap: calc(var(--margin)/2);
   -o-object-fit: contain;
      object-fit: contain;
   overflow: hidden;
 }
 
+.gridImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.gridItem {
+  font-size: var(--fontSizeBody);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 #thunderbotsProject {
-  -ms-grid-columns: (minmax(27.5vw, auto))[5];
-      grid-template-columns: repeat(5, minmax(27.5vw, auto));
+  -ms-grid-columns: (minmax(27.5vw, auto))[6];
+      grid-template-columns: repeat(6, minmax(27.5vw, auto));
 }
 
 #clawProject {
@@ -298,6 +301,24 @@ body {
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
   grid-column: 5 / 6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.g67-12 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6 / 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.g67-23 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
+  grid-column: 6 / 7;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
